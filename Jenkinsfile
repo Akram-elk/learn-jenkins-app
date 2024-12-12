@@ -10,6 +10,7 @@ pipeline {
                         reuseNode true
                     }
                 }
+                steps {
                 echo 'Hello World'
                 sh'''
                     ls -la
@@ -19,6 +20,7 @@ pipeline {
                     npm run build
                     ls -la
                  '''
+                }
             }
         }
     }
